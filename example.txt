@@ -1,0 +1,11 @@
+#X 4                ; Maximum x coordinate
+#Y 0                ; Maximum y coordinate
+#P 2 0 0  D 3 0 50  ; Package at (4,0) from time 0, deliver to (0,3) on or before time 50
+#P 3 0 3  D 3 0 50  ; Package at (0,3) from time 5, deliver to (4,0) on or before time 50
+
+1#B 3 0 4 0          ; Edge from (3,0) to (4,0) is always blocked
+2#B 2 2 2 3          ; Edge from (2,2) to (2,3) is always blocked
+3#F 0 0 0 1          ; Edge from (0,0) to (0,1) is fragile (can only be traversed once)
+#A 0 0              ; Normal agent starts at (0,0)
+1# H 4 3              ; "Human" agent (see below)  starts at (4,3)
+2# I 3 2              ; Interfering agent (see below) starts at (1,1)

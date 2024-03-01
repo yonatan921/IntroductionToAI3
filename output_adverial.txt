@@ -1,0 +1,2617 @@
+Adversial:
+"C:\Users\yonat\PycharmProjects\HELLO WORD\venv\Scripts\python.exe" C:\Users\yonat\PycharmProjects\IntroductionToAI2\main.py --file example.txt --utility adversarial
+Mode: adversarial TS1 = IS1 - IS2, TS2 = IS2 - IS1
+Heuristic is 1 point for delivered package 0.5 for carry package and 0.25 for unpicked package. cutoff_deep=4
+Left packages ['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)']
+['AI0 : packages:[], score: 0', 'AI1 : packages:[], score: 0']
+AI0   .   P   AI1
+
+MAX- aigent_id=0, IS1=0.25, IS2=0.25, TS1=0.0, deep=0
+MIN- aigent_id=1, IS1=0.25, IS2=0.25, TS2=0.0, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.25, IS2=0.25, TS1=0.0, deep=2
+MIN- aigent_id=1, IS1=0.25, IS2=0.25, TS2=0.0, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.25, IS2=0.25, TS1=0.0, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.25, IS2=0.25, TS2=0.0, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.25, IS2=0.25, TS1=0.0, deep=0
+MIN- aigent_id=0, IS1=0.5, IS2=0.0, TS2=0.5, deep=1
+MAX- aigent_id=1, IS1=0.5, IS2=0.0, TS1=0.5, deep=2
+MIN- aigent_id=0, IS1=0.5, IS2=0.0, TS2=0.5, deep=3
+MAX- aigent_id=1, IS1=0.5, IS2=0.0, TS1=0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=1.0, IS2=0.0, TS2=1.0, deep=3
+MAX- aigent_id=1, IS1=0.5, IS2=0.0, TS1=0.5, deep=2
+MIN- aigent_id=0, IS1=1.0, IS2=0.0, TS2=1.0, deep=3
+MIN- aigent_id=0, IS1=0.25, IS2=0.25, TS2=0.0, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+.   AI0   AI1   .
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+.   AI0   .   AI1
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+AI0   .   AI1   .
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+.   AI0   .   AI1
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+AI0   .   AI1   .
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+.   AI0   .   AI1
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+AI0   .   AI1   .
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+.   AI0   .   AI1
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+AI0   .   AI1   .
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+.   AI0   .   AI1
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+AI0   .   AI1   .
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+.   AI0   .   AI1
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+AI0   .   AI1   .
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+.   AI0   .   AI1
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+AI0   .   AI1   .
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+.   AI0   .   AI1
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+AI0   .   AI1   .
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+.   AI0   .   AI1
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+AI0   .   AI1   .
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+.   AI0   .   AI1
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+AI0   .   AI1   .
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+.   AI0   .   AI1
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+AI0   .   AI1   .
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+.   AI0   .   AI1
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+AI0   .   AI1   .
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+.   AI0   .   AI1
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+AI0   .   AI1   .
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+.   AI0   .   AI1
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+AI0   .   AI1   .
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+.   AI0   .   AI1
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+AI0   .   AI1   .
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+.   AI0   .   AI1
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+AI0   .   AI1   .
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+.   AI0   .   AI1
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+AI0   .   AI1   .
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+.   AI0   .   AI1
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+AI0   .   AI1   .
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+.   AI0   .   AI1
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+AI0   .   AI1   .
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+.   AI0   .   AI1
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+AI0   .   AI1   .
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+.   AI0   .   AI1
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+AI0   .   AI1   .
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+.   AI0   .   AI1
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+AI0   .   AI1   .
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+.   AI0   .   AI1
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+AI0   .   AI1   .
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+.   AI0   .   AI1
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+AI0   .   AI1   .
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=0, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=1, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=0, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=0
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=2
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=3
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MAX- aigent_id=1, IS1=0.0, IS2=0.5, TS1=-0.5, deep=4
+Cutoff!!!
+MIN- aigent_id=0, IS1=0.0, IS2=0.5, TS2=-0.5, deep=1
+MAX- aigent_id=1, IS1=0.0, IS2=1.0, TS1=-1.0, deep=2
+Left packages []
+['AI0 : packages:[], score: 0', "AI1 : packages:['pick up location:Point(x=2, y=0), destination:Point(x=1, y=0)'], score: 0"]
+.   AI0   .   AI1
+
+MAX- aigent_id=0, IS1=0.0, IS2=0.0, TS1=0.0, deep=0
+MAX- aigent_id=1, IS1=0.0, IS2=0.0, TS1=0.0, deep=0
+Left packages []
+['AI0 : packages:[], score: 0', 'AI1 : packages:[], score: 0']
+.   AI0   .   AI1
+
+
