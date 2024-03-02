@@ -144,4 +144,20 @@ class BayesNetwork:
         self.evidence.append({Point(x, y): bool_pacakge})
 
     def add_edge(self):
-        pass
+        str_menu = """
+                          Enter edge vertices:
+                          Enter first vertex:
+                          Enter X
+                          """
+        x = input(str_menu)
+        x_1 = int(x)
+        y = input("Enter y")
+        y_1 = int(y)
+        x = input("Enter second vertex"
+                  "Enter x")
+        x_2 = int(x)
+        y = input("Enter y")
+        y_2 = int(y)
+        bool_blocked = input("Enter True for blocked edge False else")
+        bool_blocked = bool_blocked.lower() == "true"
+        self.evidence.append({(Point(x_1, y_1), Point(x_2, y_2)): bool_blocked})
