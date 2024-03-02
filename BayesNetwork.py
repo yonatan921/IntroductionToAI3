@@ -1,7 +1,8 @@
 import copy
+from typing import Any
 
 from BayesNode import SeasonNode, PackageNode, EdgeNode, BlockNode, BayesNode
-from name_tuppels import SeasonMode
+from name_tuppels import SeasonMode, Point
 
 
 class BayesNetwork:
@@ -11,7 +12,7 @@ class BayesNetwork:
         self.packages = packages
         self.season = season
         self.leak = leak
-        self.evidence: [{BayesNode: float}] = []
+        self.evidence: [{Any: bool}] = []
 
     def build_network(self):
         self.season_node = self.build_season()
@@ -42,7 +43,7 @@ class BayesNetwork:
             for pacakge_node in pacakge_nodes:
                 if pacakge_node.point in [edge.v1, edge.v2]:
                     parents.add(pacakge_node)
-            edge_nodes.add(BlockNode(tuple(parents), v1=edge.v1, v2=edge.v2))
+            edge_nodes.append(BlockNode(tuple(parents), v1=edge.v1, v2=edge.v2))
         return edge_nodes
 
     def enumerate_ask(self, x_query):
@@ -69,7 +70,6 @@ class BayesNetwork:
             q_x = enumerate_all(variables, new_evidence)
 
     def __str__(self):
-
         season = str(self.season_node)
         vertexs = ""
         for vertex in self.pacakge_nodes:
@@ -79,3 +79,69 @@ class BayesNetwork:
             edges += str(egde)
 
         return season + vertexs + edges
+
+    def reset_evidence(self):
+        self.evidence = []
+
+    def add_evidence(self):
+        str_menu = """
+           Enter your choice:
+           1. Add season
+           2. Add package
+           3. Add edge
+           4. Quit.
+           """
+        while True:
+            print(str_menu)
+            choice = input(str_menu)
+            choice = int(choice)
+            if choice == 1:
+                self.add_season()
+            elif choice == 2:
+                self.add_package()
+            elif choice == 3:
+                self.add_edge()
+            elif choice == 4:
+                break
+
+    def add_season(self):
+        str_menu = """
+                   Enter season:
+                   1. LOW
+                   2. MEDIUM
+                   3. HIGH
+                   4. Quit.
+                   """
+        while True:
+            print(str_menu)
+            choice = input(str_menu)
+            choice = int(choice)
+            self.season_mode()
+            if choice == 1:
+                self.evidence.append({SeasonMode.LOW: True})
+                self.evidence.append({SeasonMode.MEDIUM: False})
+                self.evidence.append({SeasonMode.HIGH: False})
+            elif choice == 2:
+                self.evidence.append({SeasonMode.MEDIUM: True})
+            elif choice == 3:
+                self.evidence.append({SeasonMode.HIGH: True})
+            elif choice == 4:
+                break
+
+    def add_package(self):
+        str_menu = """
+                   Enter package location:
+                   Enter x
+                   """
+
+        print(str_menu)
+        x = input(str_menu)
+        x = int(x)
+        y = input("Enter y")
+        y = int(y)
+        bool_pacakge = input("Enter True for exists package False else")
+        bool_pacakge = bool_pacakge.lower() == "true"
+        self.evidence.append({Point(x, y): bool_pacakge})
+
+    def add_edge(self):
+        pass
