@@ -85,14 +85,13 @@ class BayesNetwork:
 
     def add_evidence(self):
         str_menu = """
-           Enter your choice:
-           1. Add season
-           2. Add package
-           3. Add edge
-           4. Quit.
+Enter your choice:
+1. Add season
+2. Add package
+3. Add edge
+4. Quit.
            """
         while True:
-            print(str_menu)
             choice = input(str_menu)
             choice = int(choice)
             if choice == 1:
@@ -106,25 +105,31 @@ class BayesNetwork:
 
     def add_season(self):
         str_menu = """
-                   Enter season:
-                   1. LOW
-                   2. MEDIUM
-                   3. HIGH
-                   4. Quit.
+Enter season:
+1. LOW
+2. MEDIUM
+3. HIGH
+4. Quit.
                    """
         while True:
-            print(str_menu)
             choice = input(str_menu)
             choice = int(choice)
-            self.season_mode()
+            self.reset_season_mode()
             if choice == 1:
                 self.evidence.append({SeasonMode.LOW: True})
                 self.evidence.append({SeasonMode.MEDIUM: False})
                 self.evidence.append({SeasonMode.HIGH: False})
+
             elif choice == 2:
+                self.evidence.append({SeasonMode.LOW: False})
                 self.evidence.append({SeasonMode.MEDIUM: True})
+                self.evidence.append({SeasonMode.HIGH: False})
+
             elif choice == 3:
+                self.evidence.append({SeasonMode.LOW: False})
+                self.evidence.append({SeasonMode.MEDIUM: False})
                 self.evidence.append({SeasonMode.HIGH: True})
+
             elif choice == 4:
                 break
 
@@ -134,7 +139,6 @@ class BayesNetwork:
                    Enter x
                    """
 
-        print(str_menu)
         x = input(str_menu)
         x = int(x)
         y = input("Enter y")
@@ -145,3 +149,11 @@ class BayesNetwork:
 
     def add_edge(self):
         pass
+
+    def reset_season_mode(self, key=None):
+        to_remove = []
+        for evident in self.evidence:
+            if SeasonMode.LOW in evident or SeasonMode.MEDIUM in evident or SeasonMode.HIGH in evident:
+                to_remove.append(evident)
+
+        self.evidence = [evident for evident in self.evidence if evident not in to_remove]
