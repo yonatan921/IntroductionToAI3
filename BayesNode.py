@@ -27,7 +27,6 @@ SEASON:
                 """
 
 
-
 class PackageNode(BayesNode):
     def __init__(self, parents: Tuple[SeasonNode], prob: float = None, package_point: Point = None):
         super().__init__(parents, {(SeasonMode.LOW,): min(1, prob),
@@ -44,8 +43,6 @@ VERTEX ({self.point.x}, {self.point.y})
     P(package|high) = {self.prob_table[(SeasonMode.HIGH,)]}
         
         """
-
-
 
 
 class EdgeNode(BayesNode):

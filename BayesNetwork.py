@@ -42,6 +42,12 @@ class BayesNetwork:
             edge_nodes.add(BlockNode(tuple(parents), v1=edge.v1, v2=edge.v2))
         return edge_nodes
 
+    def enumarate_ask(self, x_query, e_evidence):
+        if isinstance(x_query, SeasonMode):
+
+        pass
+
+
     def __str__(self):
 
         season = str(self.season_node)
