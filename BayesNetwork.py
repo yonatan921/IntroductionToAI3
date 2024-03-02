@@ -1,4 +1,6 @@
-from BayesNode import SeasonNode, PackageNode, EdgeNode, BlockNode
+import copy
+
+from BayesNode import SeasonNode, PackageNode, EdgeNode, BlockNode, BayesNode
 from name_tuppels import SeasonMode
 
 
@@ -9,6 +11,7 @@ class BayesNetwork:
         self.packages = packages
         self.season = season
         self.leak = leak
+        self.evidence: [{}] = []
 
     def build_network(self):
         self.season_node = self.build_season()
@@ -19,20 +22,20 @@ class BayesNetwork:
         return SeasonNode(self.season)
 
     def build_package(self, season_node: SeasonNode) -> {PackageNode}:
-        pacakge_nodes = set()
+        pacakge_nodes = []
         for pacakge in self.packages:
-            pacakge_nodes.add(PackageNode((season_node,), pacakge.prob, pacakge.point))
+            pacakge_nodes.append(PackageNode((season_node,), pacakge.prob, pacakge.point))
         # return {PackageNode((season_node,), pacakge.prob, pacakge.point) for pacakge in self.packages}
         return pacakge_nodes
 
     def build_edges(self, pacakge_nodes: {PackageNode}):
-        edge_nodes = set()
+        edge_nodes = []
         for edge in self.fragiles:
             parents: {PackageNode} = set()
             for pacakge_node in pacakge_nodes:
                 if pacakge_node.point in [edge.v1, edge.v2]:
                     parents.add(pacakge_node)
-            edge_nodes.add(EdgeNode(tuple(parents), prob=edge.prob, v1=edge.v1, v2=edge.v2, leakage=self.leak))
+            edge_nodes.append(EdgeNode(tuple(parents), prob=edge.prob, v1=edge.v1, v2=edge.v2, leakage=self.leak))
 
         for edge in self.blocks:
             parents: {PackageNode} = set()
@@ -42,11 +45,28 @@ class BayesNetwork:
             edge_nodes.add(BlockNode(tuple(parents), v1=edge.v1, v2=edge.v2))
         return edge_nodes
 
-    def enumarate_ask(self, x_query, e_evidence):
+    def enumerate_ask(self, x_query):
         if isinstance(x_query, SeasonMode):
-
+            q_x = [None, None, None]
+        else:
+            q_x = [None, None]
+        for
         pass
 
+    def enumerate_all(self, variables, evidence):
+        if not variables:
+            return 1
+        Y = variables[0]
+        if y in evidence:
+            return y.prob_table
+
+    def enumerate_ask_season(self, season: SeasonNode):
+        q_x = [None, None, None]
+        for value in season.prob_table:
+            new_evidence = copy.deepcopy(self.evidence)
+            new_evidence.append(value)
+            variables = [self.season_node] + self.pacakge_nodes + self.edge_nodes
+            q_x = enumerate_all(variables, new_evidence)
 
     def __str__(self):
 
