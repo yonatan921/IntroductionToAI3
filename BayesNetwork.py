@@ -11,7 +11,7 @@ class BayesNetwork:
         self.packages = packages
         self.season = season
         self.leak = leak
-        self.evidence: [{}] = []
+        self.evidence: [{BayesNode: float}] = []
 
     def build_network(self):
         self.season_node = self.build_season()
@@ -47,17 +47,17 @@ class BayesNetwork:
 
     def enumerate_ask(self, x_query):
         if isinstance(x_query, SeasonMode):
-            q_x = [None, None, None]
+            self.enumerate_ask_season(x_query)
         else:
             q_x = [None, None]
-        for
         pass
 
     def enumerate_all(self, variables, evidence):
         if not variables:
             return 1
         Y = variables[0]
-        if y in evidence:
+        if Y in evidence:
+            value = evidence[Y]
             return y.prob_table
 
     def enumerate_ask_season(self, season: SeasonNode):
