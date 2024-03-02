@@ -68,7 +68,7 @@ class Parser:
     def parse_vpackage(self, words: [str]) -> VPackage:
         point = Point(int(words[1]), int(words[2]))
         f = words[3]
-        prob = words[4]
+        prob = float(words[4])
         return VPackage(point, f, prob)
 
     def parse_blocks(self, words: [str]) -> Edge:
