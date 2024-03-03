@@ -21,9 +21,9 @@ class SeasonNode(BayesNode):
     def __str__(self):
         return f"""
 SEASON:
-    P(low) = {self.prob_table[(SeasonMode.LOW,)]}
-    P(medium) = {self.prob_table[(SeasonMode.MEDIUM,)]}
-    P(high) = {self.prob_table[(SeasonMode.HIGH,)]}
+    P(low) = {self.prob_table[(True, False, False)]}
+    P(medium) = {self.prob_table[(False, True, False)]}
+    P(high) = {self.prob_table[(False, False, True)]}
     
 """
 
@@ -38,9 +38,9 @@ class PackageNode(BayesNode):
     def __str__(self):
         return f"""
 VERTEX ({self._id.x}, {self._id.y})
-    P(package|low) = {self.prob_table[(SeasonMode.LOW,)]}
-    P(package|medium) = {self.prob_table[(SeasonMode.MEDIUM,)]}
-    P(package|high) = {self.prob_table[(SeasonMode.HIGH,)]}
+    P(package|low) = {self.prob_table[(True, False, False)]}
+    P(package|medium) = {self.prob_table[(False, True, False)]}
+    P(package|high) = {self.prob_table[(False, False, True)]}
         
 """
 
