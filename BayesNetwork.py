@@ -14,7 +14,7 @@ class BayesNetwork:
         self.leak = leak
         self.evidence: {Any: (Tuple[bool], bool)} = {}
 
-    def build_network(self):
+    def build_network(self) :
         self.season_node = self.build_season()
         self.pacakge_nodes = self.build_package(self.season_node)
         self.edge_nodes = self.build_edges(self.pacakge_nodes)
