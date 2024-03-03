@@ -59,8 +59,16 @@ class BayesNetwork:
         y = evidence.get(bayes_node._id)
         if y is not None:
             return bayes_node.prob_table[y[0]] * self.enumerate_all(variables[1:], evidence)
-        probs = [bayes_node.prob_table[prob] * self.enumerate_all(variables[1:], evidence) for prob in y[0]]
-        return sum(probs)
+        if isinstance(bayes_node, EdgeNode) or isinstance(bayes_node, BlockNode):
+            values = [(False, False), (False, True), (True, False), (True, True)]
+        else:
+            values = [(True, False, False), (False, True, False), (False, False, True)]
+        probs = 0
+        for value in values:
+            evidence[bayes_node._id] = None
+            evidence[bayes_node._id] = (bayes_node._id, True)
+            probs += bayes_node.prob_table[value] * self.enumerate_all(variables[1:], evidence)
+        return probs
 
 
     def enumerate_ask_season(self, season: Tuple[bool]):
