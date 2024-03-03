@@ -12,7 +12,7 @@ class BayesNetwork:
         self.packages = packages
         self.season = season
         self.leak = leak
-        self.evidence: {Any: (Tuple[bool], bool)} = {}
+        self.evidence: {Any: BayesNode} = {}
 
     def build_network(self):
         self.season_node = self.build_season()
@@ -37,12 +37,12 @@ class BayesNetwork:
                     parents.add(pacakge_node)
             edge_nodes.append(EdgeNode(tuple(parents), prob=edge.prob, v1=edge.v1, v2=edge.v2, leakage=self.leak))
 
-        for edge in self.blocks:
-            parents: {PackageNode} = set()
-            for pacakge_node in pacakge_nodes:
-                if pacakge_node._id in [edge.v1, edge.v2]:
-                    parents.add(pacakge_node)
-            edge_nodes.append(BlockNode(tuple(parents), v1=edge.v1, v2=edge.v2))
+        # for edge in self.blocks:
+        #     parents: {PackageNode} = set()
+        #     for pacakge_node in pacakge_nodes:
+        #         if pacakge_node._id in [edge.v1, edge.v2]:
+        #             parents.add(pacakge_node)
+        #     edge_nodes.append(BlockNode(tuple(parents), v1=edge.v1, v2=edge.v2))
         return edge_nodes
 
     def enumerate_ask(self, x_query):
@@ -58,19 +58,28 @@ class BayesNetwork:
         bayes_node: BayesNode = variables[0]
         y = evidence.get(bayes_node._id)
         if y is not None:
-            return bayes_node.prob_table[y[0]] * self.enumerate_all(variables[1:], evidence)
-        probs = [bayes_node.prob_table[prob] * self.enumerate_all(variables[1:], evidence) for prob in y[0]]
+            keys = [key for key, value in y.prob_table.items() if value != 0]
+            probs = []
+            for key in keys:
+                probs.append( bayes_node.prob_table[key] * self.enumerate_all(variables[1:], evidence))
+            return sum(probs)
+        evidence[bayes_node._id] = bayes_node
+        probs = [bayes_node.prob_table[entry] * self.enumerate_all(variables[1:], evidence)
+                 for entry in bayes_node.prob_table.keys()]
         return sum(probs)
 
-
-    def enumerate_ask_season(self, season: Tuple[bool]):
-        q_x = [{SeasonMode.LOW: None}, {SeasonMode.MEDIUM: None}, {SeasonMode.HIGH: None}]
-        for index, season_mode in enumerate(season):
+    def enumerate_ask_season(self, season: SeasonNode):
+        q_x = [0, 0, 0]
+        for index, season_mode in enumerate(season.prob_table):
             new_evidence = copy.deepcopy(self.evidence)
-            new_evidence[0] = (season, True)
+            new_evidence[season._id] = SeasonNode(tuple(1 if node else 0 for node in season_mode))
             variables = [self.season_node] + self.pacakge_nodes + self.edge_nodes
-            # q_x[index][season]] = self.enumerate_all(variables, new_evidence)
-            a = self.enumerate_all(variables, new_evidence)
+            q_x[index] = self.enumerate_all(variables, new_evidence)
+        return self.normal_vector(q_x)
+
+    def normal_vector(self, vector: [float]):
+        num_sum = sum(vector)
+        return [num / num_sum for num in vector]
 
     def __str__(self):
         season = str(self.season_node)
@@ -121,16 +130,18 @@ Enter season:
 
             if choice == 1:
                 self.remove_duplicate_evidance()
-                self.evidence[0] = ((True, False, False), True)
+                node = SeasonNode((1, 0, 0))
+                self.evidence[node._id] = node
 
             elif choice == 2:
                 self.remove_duplicate_evidance()
-                self.evidence[0] = ((False, True, False), True)
+                node = SeasonNode((0, 1, 0))
+                self.evidence[node._id] = node
 
             elif choice == 3:
                 self.remove_duplicate_evidance()
-                self.evidence[0] = ((False, False, True), True)
-
+                node = SeasonNode((0, 0, 1))
+                self.evidence[node._id] = node
             elif choice == 4:
                 break
 
@@ -148,7 +159,7 @@ Enter x
         self.remove_duplicate_evidance(p)
         bool_pacakge = input("Enter True for exists package False else")
         bool_pacakge = bool_pacakge.lower() == "true"
-        self.evidence[p] = {p: bool_pacakge}
+        self.evidence[p] = PackageNode((self.season_node,), 1 if bool_pacakge else 0, p)
 
     def add_edge(self):
         str_menu = """
@@ -165,11 +176,11 @@ Enter X
         x_2 = int(x)
         y = input("Enter y")
         y_2 = int(y)
-        p = (Point(x_1, y_1), Point(x_2, y_2))
-        self.remove_duplicate_evidance(p)
+        p1, p2 = Point(x_1, y_1), Point(x_2, y_2)
+        self.remove_duplicate_evidance((p1, p2))
         bool_blocked = input("Enter True for blocked edge False else")
         bool_blocked = bool_blocked.lower() == "true"
-        self.evidence[p] = {p: bool_blocked}
+        self.evidence[p] = EdgeNode(None, prob=1 if bool_blocked else 0, v1=p1, v2=p2)
 
     def remove_duplicate_evidance(self, key=None):
         if key in self.evidence:

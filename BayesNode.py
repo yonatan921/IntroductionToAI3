@@ -1,4 +1,3 @@
-from enum import Enum
 from typing import Tuple
 
 from name_tuppels import Point, SeasonMode
@@ -12,11 +11,13 @@ class BayesNode:
 
 
 class SeasonNode(BayesNode):
+    _id_counter = 0
 
     def __init__(self, prob: Tuple[float, float, float] = None):
         super().__init__(None, {(True, False, False): prob[0],
                                 (False, True, False): prob[1],
-                                (False, False, True): prob[2]})
+                                (False, False, True): prob[2]}, SeasonNode._id_counter)
+        SeasonNode._id_counter += 1
 
     def __str__(self):
         return f"""
