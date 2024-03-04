@@ -49,7 +49,7 @@ Choose probabilistic reasoning:
             elif prob_choice == 2:
                 pass
             elif prob_choice == 3:
-                vector = network.enumerate_ask_season({network.season_node: 0})
+                vector = network.enumerate_ask_season()
                 print(f"low season = {vector[0]}, medium season = {vector[1]}, high season = {vector[2]}")
             elif prob_choice == 4:
                 break

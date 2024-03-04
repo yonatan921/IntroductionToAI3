@@ -58,30 +58,33 @@ class BayesNetwork:
                 # Calculate the conditional probability based on evidence
                 parents_values = tuple(evidence[parent] for parent in node.parents) if node.parents else ()
                 d = node.prob_table.get(parents_values, {})
-                p = d.get((evidence[bayes_node],), 0.0) if isinstance(evidence[bayes_node], int) else d.get(
+                p = d.get((evidence[bayes_node]), 0.0) if isinstance(evidence[bayes_node], int) else d.get(
                     tuple(evidence[bayes_node]), 0.0)
                 return p * self.enumerate_all(variables[1:], evidence)
 
         # If the BayesianNode is not in the evidence, add it
         numerate_prob = 0
+        probs = 0
+        dicts = [bayes_node.prob_table.get(parents_values, {}) for parents_values in bayes_node.prob_table.keys()]
         for option in bayes_node.options:
-            evidence[bayes_node] = option
-            numerate_prob += self.enumerate_all(variables[1:], evidence)
+            new_evidance = copy.deepcopy(evidence)
+            new_evidance[bayes_node] = option
+            numerate_prob += self.enumerate_all(variables[1:], new_evidance)
+            probs += sum([d.get((tuple([new_evidance[bayes_node]])), d.get(new_evidance[bayes_node], )) * numerate_prob for
+                      d in dicts])
         # Recursively calculate the probability using the enumeration algorithm
 
         # Calculate the probability for each possible entry in the CPT
-        probs = [bayes_node.prob_table.get(parents_values, {}).get((tuple([evidence[bayes_node]])), 0.0) * numerate_prob
-                 for
-                 parents_values in bayes_node.prob_table.keys()]
 
         # Return the sum of the probabilities
-        return sum(probs)
+        return probs
 
-    def enumerate_ask_season(self, node: {BayesNode: Any}):
+    def enumerate_ask_season(self):
+        node = self.season_node
         q_x = [0, 0, 0]
         for index, season_mode in enumerate([0, 1, 2]):
             new_evidence = copy.deepcopy(self.evidence)
-            new_evidence.update(node)
+            new_evidence[node] = season_mode
             variables = [self.season_node] + self.pacakge_nodes + self.edge_nodes
             q_x[index] = self.enumerate_all(variables, new_evidence)
         return self.normal_vector(q_x)
