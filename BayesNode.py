@@ -12,10 +12,9 @@ class BayesNode:
 
 class SeasonNode(BayesNode):
 
+    options = [0,1,2]
     def __init__(self, prob: Tuple[float, float, float] = None):
-        super().__init__(None, {(True, False, False): prob[0],
-                                (False, True, False): prob[1],
-                                (False, False, True): prob[2]})
+        super().__init__(None, {(): {0: prob[0], 1: prob[1], 2: prob[2]}})
         self._id = 0
 
     def __eq__(self, other):
@@ -35,10 +34,11 @@ SEASON:
 
 
 class PackageNode(BayesNode):
-    def __init__(self, parents: Tuple[SeasonNode], prob: [float, float, float] = None, package_point: Point = None):
-        super().__init__(parents, {(True, False, False): min(1, prob[0]),
-                                   (False, True, False): min(1, 2 * prob[1]),
-                                   (False, False, True): min(1, 3 * prob[2])
+    options = [True, False]
+    def __init__(self, parents: Tuple[SeasonNode], prob: float = None, package_point: Point = None):
+        super().__init__(parents, {(0,): {True: min(1, prob), False: 1 - min(1, prob)},
+                                   (1,): {True: min(1, 2 * prob), False: 1 - min(1, 2 * prob)},
+                                   (2,): {True: min(1, 3 * prob), False: 1 - min(1, 3 * prob)}
                                    })
         self._id = package_point
 
@@ -59,12 +59,14 @@ VERTEX ({self._id.x}, {self._id.y})
 
 
 class EdgeNode(BayesNode):
+    options = [True, False]
     def __init__(self, parents: Tuple[PackageNode], prob: float = None, v1: Point = None, v2: Point = None,
                  leakage: float = 0):
-        super().__init__(parents, {(False, False): leakage,
-                                   (False, True): prob if len(parents) > 1 else 0,
-                                   (True, False): prob if len(parents) > 0 else 0,
-                                   (True, True): 1 - (1 - prob) ** 2 if len(parents) > 1 else 0})
+        super().__init__(parents, {(False, False): {True: leakage, False: 1 - leakage},
+                                   (False, True): {True: prob, False: 1 - prob},
+                                   (True, False): {True: prob, False: 1 - prob},
+                                   (True, True): {True: 1 - (1 - prob) ** 2, False: 1 - (1 - (1 - prob) ** 2)}
+                                   })
         self._id = (v1, v2)
 
     def __eq__(self, other):
@@ -85,11 +87,12 @@ EDGE ({self._id[0].x}, {self._id[0].y}) ({self._id[1].x}, {self._id[1].y})
 
 
 class BlockNode(BayesNode):
+    options = [True, False]
     def __init__(self, parents: Tuple[PackageNode], v1: Point = None, v2: Point = None):
-        super().__init__(parents, {(False, False): 1,
-                                   (False, True): 1,
-                                   (True, False): 1,
-                                   (True, True): 1})
+        super().__init__(parents, {(False, False): {True: 1, False: 0},
+                                   (False, True): {True: 1, False: 0},
+                                   (True, False): {True: 1, False: 0},
+                                   (True, True): {True: 1, False: 0}})
         self._id = (v1, v2)
 
     def __eq__(self, other):

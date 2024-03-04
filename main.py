@@ -43,13 +43,13 @@ Choose probabilistic reasoning:
                 for vertex in network.pacakge_nodes:
                     vector = network.\
                         enumerate_ask_package(PackageNode(None,
-                                                          [1, 0, 0],
+                                                          1,
                                                           vertex._id))
 
             elif prob_choice == 2:
                 pass
             elif prob_choice == 3:
-                vector = network.enumerate_ask_season(SeasonNode((1, 0, 0)))
+                vector = network.enumerate_ask_season({network.season_node: 0})
                 print(f"low season = {vector[0]}, medium season = {vector[1]}, high season = {vector[2]}")
             elif prob_choice == 4:
                 break

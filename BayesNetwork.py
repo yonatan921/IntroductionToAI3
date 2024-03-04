@@ -1,5 +1,5 @@
 import copy
-from typing import Tuple, Any
+from typing import Tuple, Any, Set
 
 from BayesNode import SeasonNode, PackageNode, EdgeNode, BlockNode, BayesNode
 from name_tuppels import SeasonMode, Point
@@ -13,9 +13,9 @@ class BayesNetwork:
         self.season = season
         self.leak = leak
         self.current_season = None
-        self.evidence: set(BayesNode) = set()
+        self.evidence: {BayesNode: Any} = {}
 
-    def build_network(self) :
+    def build_network(self):
         self.season_node = self.build_season()
         self.pacakge_nodes = self.build_package(self.season_node)
         self.edge_nodes = self.build_edges(self.pacakge_nodes)
@@ -26,7 +26,7 @@ class BayesNetwork:
     def build_package(self, season_node: SeasonNode) -> {PackageNode}:
         pacakge_nodes = []
         for pacakge in self.packages:
-            pacakge_nodes.append(PackageNode((season_node,), [pacakge.prob, pacakge.prob, pacakge.prob] , pacakge.point))
+            pacakge_nodes.append(PackageNode((season_node,), pacakge.prob, pacakge.point))
         return pacakge_nodes
 
     def build_edges(self, pacakge_nodes: {PackageNode}):
@@ -46,25 +46,42 @@ class BayesNetwork:
             edge_nodes.append(BlockNode(tuple(parents), v1=edge.v1, v2=edge.v2))
         return edge_nodes
 
-    def enumerate_all(self, variables, evidence):
+    def enumerate_all(self, variables: [BayesNode], evidence: {BayesNode: Any}):
         if not variables:
             return 1
-        bayes_node: BayesNode = variables[0]
+
+        bayes_node = variables[0]
+
+        # Check if the current BayesianNode is in the evidence
         for node in evidence:
             if bayes_node == node:
-                [keys] = [key for key, value in node.prob_table.items() if value != 0]
-                return bayes_node.prob_table[keys] * self.enumerate_all(variables[1:], evidence)
-        evidence.add(bayes_node)
-        enumarate_prob = self.enumerate_all(variables[1:], evidence)
-        probs = [bayes_node.prob_table[entry] * enumarate_prob for entry in bayes_node.prob_table.keys()]
+                # Calculate the conditional probability based on evidence
+                parents_values = tuple(evidence[parent] for parent in node.parents) if node.parents else ()
+                d = node.prob_table.get(parents_values, {})
+                p = d.get((evidence[bayes_node],), 0.0) if isinstance(evidence[bayes_node], int) else d.get(
+                    tuple(evidence[bayes_node]), 0.0)
+                return p * self.enumerate_all(variables[1:], evidence)
+
+        # If the BayesianNode is not in the evidence, add it
+        numerate_prob = 0
+        for option in bayes_node.options:
+            evidence[bayes_node] = option
+            numerate_prob += self.enumerate_all(variables[1:], evidence)
+        # Recursively calculate the probability using the enumeration algorithm
+
+        # Calculate the probability for each possible entry in the CPT
+        probs = [bayes_node.prob_table.get(parents_values, {}).get((tuple([evidence[bayes_node]])), 0.0) * numerate_prob
+                 for
+                 parents_values in bayes_node.prob_table.keys()]
+
+        # Return the sum of the probabilities
         return sum(probs)
 
-
-    def enumerate_ask_season(self, node: BayesNode):
+    def enumerate_ask_season(self, node: {BayesNode: Any}):
         q_x = [0, 0, 0]
-        for index, season_mode in enumerate(node.prob_table):
+        for index, season_mode in enumerate([0, 1, 2]):
             new_evidence = copy.deepcopy(self.evidence)
-            new_evidence.add(SeasonNode(tuple(1 if value else 0 for value in season_mode)))
+            new_evidence.update(node)
             variables = [self.season_node] + self.pacakge_nodes + self.edge_nodes
             q_x[index] = self.enumerate_all(variables, new_evidence)
         return self.normal_vector(q_x)
@@ -73,7 +90,7 @@ class BayesNetwork:
         q_x = [0, 0]
         for index, key in enumerate([True, False]):
             new_evidence = copy.deepcopy(self.evidence)
-            new_evidence.add(PackageNode(None, [1, 1, 1] if key else [0, 0, 0], node._id))
+            new_evidence.add(PackageNode(node.parents, 1 if key else 0, node._id))
             variables = [self.season_node] + self.pacakge_nodes + self.edge_nodes
             q_x[index] = self.enumerate_all(variables, new_evidence)
         return self.normal_vector(q_x)
@@ -200,4 +217,3 @@ Enter X
             if isinstance(node, SeasonNode):
                 self.evidence.remove(node)
                 break
-
