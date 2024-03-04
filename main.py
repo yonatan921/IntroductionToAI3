@@ -1,5 +1,6 @@
 from Aigent import AiAigent
 from BayesNetwork import BayesNetwork
+from BayesNode import SeasonNode
 from Graph import Graph
 from Parser import Parser
 from GameMaster import GameMaster
@@ -29,7 +30,7 @@ Enter your choice:
         elif choice == 2:
             network.add_evidence()
         elif choice == 3:
-            network.enumerate_ask_season((True, False, False))
+            network.enumerate_ask(SeasonNode((1, 0, 0)))
         elif choice == 4:
             break
 

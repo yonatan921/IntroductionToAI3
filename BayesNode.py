@@ -1,12 +1,11 @@
 from enum import Enum
 from typing import Tuple
 
-from name_tuppels import Point, SeasonMode
+from name_tuppels import Point
 
 
 class BayesNode:
-    def __init__(self, parents, prob_table: {Tuple: float} = None, _id=0):
-        self._id = _id
+    def __init__(self, parents, prob_table: {Tuple: float} = None):
         self.parents = parents
         self.prob_table = prob_table
 
@@ -17,6 +16,12 @@ class SeasonNode(BayesNode):
         super().__init__(None, {(True, False, False): prob[0],
                                 (False, True, False): prob[1],
                                 (False, False, True): prob[2]})
+
+    def __eq__(self, other):
+        return isinstance(other, SeasonNode)
+
+    def __hash__(self):
+        return hash(SeasonNode.__name__)
 
     def __str__(self):
         return f"""
@@ -33,7 +38,14 @@ class PackageNode(BayesNode):
         super().__init__(parents, {(True, False, False): min(1, prob),
                                    (False, True, False): min(1, 2 * prob),
                                    (False, False, True): min(1, 3 * prob)
-                                   }, package_point)
+                                   })
+        self._id = package_point
+
+    def __eq__(self, other):
+        return other._id == self._id
+
+    def __hash__(self):
+        return hash(self._id)
 
     def __str__(self):
         return f"""
@@ -51,7 +63,14 @@ class EdgeNode(BayesNode):
         super().__init__(parents, {(False, False): leakage,
                                    (False, True): prob if len(parents) > 1 else 0,
                                    (True, False): prob if len(parents) > 0 else 0,
-                                   (True, True): 1 - (1 - prob) ** 2 if len(parents) > 1 else 0}, (v1, v2))
+                                   (True, True): 1 - (1 - prob) ** 2 if len(parents) > 1 else 0})
+        self._id = (v1, v2)
+
+    def __eq__(self, other):
+        return other._id == self._id
+
+    def __hash__(self):
+        return hash(self._id)
 
     def __str__(self):
         return f"""
@@ -69,7 +88,14 @@ class BlockNode(BayesNode):
         super().__init__(parents, {(False, False): 1,
                                    (False, True): 1,
                                    (True, False): 1,
-                                   (True, True): 1}, (v1, v2))
+                                   (True, True): 1})
+        self._id = (v1, v2)
+
+    def __eq__(self, other):
+        return other._id == self._id
+
+    def __hash__(self):
+        return hash(self._id)
 
     def __str__(self):
         return f"""

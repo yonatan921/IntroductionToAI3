@@ -46,40 +46,32 @@ class BayesNetwork:
             edge_nodes.append(BlockNode(tuple(parents), v1=edge.v1, v2=edge.v2))
         return edge_nodes
 
-    def enumerate_ask(self, x_query):
-        if isinstance(x_query, SeasonMode):
-            self.enumerate_ask_season(x_query)
-        else:
-            q_x = [None, None]
-        pass
-
     def enumerate_all(self, variables, evidence):
         if not variables:
             return 1
         bayes_node: BayesNode = variables[0]
         if bayes_node in self.evidence:
-            return bayes_node.prob_table[y[0]] * self.enumerate_all(variables[1:], evidence)
-        if isinstance(bayes_node, EdgeNode) or isinstance(bayes_node, BlockNode):
-            values = [(False, False), (False, True), (True, False), (True, True)]
-        else:
-            values = [(True, False, False), (False, True, False), (False, False, True)]
-        probs = 0
-        for value in values:
-            evidence[bayes_node._id] = None
-            evidence[bayes_node._id] = (bayes_node._id, True)
-            probs += bayes_node.prob_table[value] * self.enumerate_all(variables[1:], evidence)
-        return probs
+            keys = [key for key, value in bayes_node.prob_table.items() if value != 0]
+            return bayes_node.prob_table[keys] * self.enumerate_all(variables[1:], evidence)
+        evidence.add(bayes_node)
+        probs = [bayes_node.prob_table[entry] * self.enumerate_all(variables[1:], evidence)
+                 for entry in bayes_node.prob_table.keys()]
+        return sum(probs)
 
 
-    def enumerate_ask_season(self, season: Tuple[bool]):
-        q_x = [{SeasonMode.LOW: None}, {SeasonMode.MEDIUM: None}, {SeasonMode.HIGH: None}]
-        x = [SeasonNode((1, 0, 0)), SeasonNode((0, 1, 0)), SeasonNode((0, 0, 1))]
-        for season_node in x:
+    def enumerate_ask(self, node: BayesNode):
+        q_x = [0, 0, 0]
+        for index, season_mode in enumerate(node.prob_table):
             new_evidence = copy.deepcopy(self.evidence)
-            new_evidence.add(season_node)
+            n = SeasonNode(tuple(1 if value else 0 for value in season_mode))
+            new_evidence.add(SeasonNode(tuple(1 if value else 0 for value in season_mode)))
             variables = [self.season_node] + self.pacakge_nodes + self.edge_nodes
-            # q_x[index][season]] = self.enumerate_all(variables, new_evidence)
-            a = self.enumerate_all(variables, new_evidence)
+            q_x[index] = self.enumerate_all(variables, new_evidence)
+            return self.normal_vector(q_x)
+
+    def normal_vector(self, vector: [float]):
+        num_sum = sum(vector)
+        return [num / num_sum for num in vector]
 
     def __str__(self):
         season = str(self.season_node)
