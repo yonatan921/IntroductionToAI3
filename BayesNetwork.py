@@ -26,7 +26,7 @@ class BayesNetwork:
     def build_package(self, season_node: SeasonNode) -> {PackageNode}:
         pacakge_nodes = []
         for pacakge in self.packages:
-            pacakge_nodes.append(PackageNode((season_node,), pacakge.prob, pacakge.point))
+            pacakge_nodes.append(PackageNode((season_node,), [pacakge.prob, pacakge.prob, pacakge.prob] , pacakge.point))
         return pacakge_nodes
 
     def build_edges(self, pacakge_nodes: {PackageNode}):
@@ -50,24 +50,33 @@ class BayesNetwork:
         if not variables:
             return 1
         bayes_node: BayesNode = variables[0]
-        if bayes_node in self.evidence:
-            keys = [key for key, value in bayes_node.prob_table.items() if value != 0]
-            return bayes_node.prob_table[keys] * self.enumerate_all(variables[1:], evidence)
+        for node in evidence:
+            if bayes_node == node:
+                [keys] = [key for key, value in node.prob_table.items() if value != 0]
+                return bayes_node.prob_table[keys] * self.enumerate_all(variables[1:], evidence)
         evidence.add(bayes_node)
-        probs = [bayes_node.prob_table[entry] * self.enumerate_all(variables[1:], evidence)
-                 for entry in bayes_node.prob_table.keys()]
+        enumarate_prob = self.enumerate_all(variables[1:], evidence)
+        probs = [bayes_node.prob_table[entry] * enumarate_prob for entry in bayes_node.prob_table.keys()]
         return sum(probs)
 
 
-    def enumerate_ask(self, node: BayesNode):
+    def enumerate_ask_season(self, node: BayesNode):
         q_x = [0, 0, 0]
         for index, season_mode in enumerate(node.prob_table):
             new_evidence = copy.deepcopy(self.evidence)
-            n = SeasonNode(tuple(1 if value else 0 for value in season_mode))
             new_evidence.add(SeasonNode(tuple(1 if value else 0 for value in season_mode)))
             variables = [self.season_node] + self.pacakge_nodes + self.edge_nodes
             q_x[index] = self.enumerate_all(variables, new_evidence)
-            return self.normal_vector(q_x)
+        return self.normal_vector(q_x)
+
+    def enumerate_ask_package(self, node: BayesNode):
+        q_x = [0, 0]
+        for index, key in enumerate([True, False]):
+            new_evidence = copy.deepcopy(self.evidence)
+            new_evidence.add(PackageNode(None, [1, 1, 1] if key else [0, 0, 0], node._id))
+            variables = [self.season_node] + self.pacakge_nodes + self.edge_nodes
+            q_x[index] = self.enumerate_all(variables, new_evidence)
+        return self.normal_vector(q_x)
 
     def normal_vector(self, vector: [float]):
         num_sum = sum(vector)
@@ -150,7 +159,7 @@ Enter x
         y = int(y)
         bool_pacakge = input("Enter True for exists package False else")
         bool_pacakge = bool_pacakge.lower() == "true"
-        node = PackageNode((self.current_season,), 1 if bool_pacakge else 0, Point(x, y))
+        node = PackageNode((self.current_season,), [1, 1, 1] if bool_pacakge else [0, 0, 0], Point(x, y))
         self.remove_duplicate_evidance(node)
         self.evidence.add(node)
 

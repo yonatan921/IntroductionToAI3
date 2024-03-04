@@ -16,6 +16,7 @@ class SeasonNode(BayesNode):
         super().__init__(None, {(True, False, False): prob[0],
                                 (False, True, False): prob[1],
                                 (False, False, True): prob[2]})
+        self._id = 0
 
     def __eq__(self, other):
         return isinstance(other, SeasonNode)
@@ -34,10 +35,10 @@ SEASON:
 
 
 class PackageNode(BayesNode):
-    def __init__(self, parents: Tuple[SeasonNode], prob: float = None, package_point: Point = None):
-        super().__init__(parents, {(True, False, False): min(1, prob),
-                                   (False, True, False): min(1, 2 * prob),
-                                   (False, False, True): min(1, 3 * prob)
+    def __init__(self, parents: Tuple[SeasonNode], prob: [float, float, float] = None, package_point: Point = None):
+        super().__init__(parents, {(True, False, False): min(1, prob[0]),
+                                   (False, True, False): min(1, 2 * prob[1]),
+                                   (False, False, True): min(1, 3 * prob[2])
                                    })
         self._id = package_point
 
