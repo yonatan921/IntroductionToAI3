@@ -6,9 +6,9 @@ from name_tuppels import Point
 
 
 class BayesNetwork:
-    def __init__(self, blocks, fragiles, packages, season, leak):
+    def __init__(self, blocks, fragile, packages, season, leak):
         self.blocks = blocks
-        self.fragiles = fragiles
+        self.fragile = fragile
         self.packages = packages
         self.season = season
         self.leak = leak
@@ -22,7 +22,7 @@ class BayesNetwork:
     def build_season(self):
         return SeasonNode(self.season)
 
-    def build_package(self, season_node: SeasonNode) -> {PackageNode}:
+    def build_package(self, season_node: SeasonNode) -> [PackageNode]:
         pacakge_nodes = []
         for pacakge in self.packages:
             pacakge_nodes.append(PackageNode((season_node,), pacakge.prob, pacakge.point))
@@ -38,9 +38,9 @@ class BayesNetwork:
             if edge_node._id == (p1, p2) or edge_node._id == (p2, p1):
                 return edge_node
 
-    def build_edges(self, pacakge_nodes: {PackageNode}):
+    def build_edges(self, pacakge_nodes: [PackageNode]):
         edge_nodes = []
-        for edge in self.fragiles:
+        for edge in self.fragile:
             parents: {PackageNode} = set()
             for pacakge_node in pacakge_nodes:
                 if pacakge_node._id in [edge.v1, edge.v2]:
@@ -156,14 +156,13 @@ Enter your choice:
 """
         while True:
             choice = input(str_menu)
-            choice = int(choice)
-            if choice == 1:
+            if choice == "1":
                 self.add_season()
-            elif choice == 2:
+            elif choice == "2":
                 self.add_package()
-            elif choice == 3:
+            elif choice == "3":
                 self.add_edge()
-            elif choice == 4:
+            elif choice == "4":
                 break
 
     def add_season(self):
@@ -176,28 +175,30 @@ Enter season:
 """
         while True:
             choice = input(str_menu)
-            choice = int(choice)
-            if choice == 1:
+            if choice == "1":
                 self.evidence[self.season_node] = 0
-            elif choice == 2:
+                break
+            elif choice == "2":
                 self.evidence[self.season_node] = 1
-            elif choice == 3:
+                break
+            elif choice == "3":
                 self.evidence[self.season_node] = 2
-            elif choice == 4:
+                break
+            elif choice == "4":
                 break
 
     def add_package(self):
         str_menu = """
 Enter package location:
-Enter x
 """
-
-        x = input(str_menu)
-        x = int(x)
-        y = input("Enter y")
-        y = int(y)
-        bool_pacakge = input("Enter True for exists package False else")
-        bool_pacakge = bool_pacakge.lower() == "true"
+        print(str_menu)
+        valid_x = {str(v_package.point.x) for v_package in self.packages}
+        x = int(self.get_input("Enter x", valid_x))
+        valid_y = {str(v_package.point.y) for v_package in self.packages if v_package.point.x == x}
+        y = int(self.get_input("Enter y", valid_y))
+        valid_bool = {"t", "f"}
+        bool_pacakge = self.get_input("Enter t for exists package f for not exist.", valid_bool)
+        bool_pacakge = bool_pacakge == "t"
         package_node = self.find_pacakge_node(Point(x, y))
         self.evidence[package_node] = bool_pacakge
 
@@ -205,22 +206,32 @@ Enter x
         str_menu = """
 Enter edge vertices:
 Enter first vertex:
-Enter X
 """
-        x = input(str_menu)
-        x_1 = int(x)
-        y = input("Enter y")
-        y_1 = int(y)
-        x = input("Enter second vertex\nEnter x")
-        x_2 = int(x)
-        y = input("Enter y")
-        y_2 = int(y)
-        p1 = Point(x_1, y_1)
-        p2 = Point(x_2, y_2)
-        bool_blocked = input("Enter True for blocked edge False else")
-        bool_blocked = bool_blocked.lower() == "true"
+        print(str_menu)
+        valid_x1 = {str(edge.v1.x) for edge in self.fragile}
+        x1 = int(self.get_input("Enter x1", valid_x1))
+
+        valid_y1 = {str(fragile.v1.y) for fragile in self.fragile if fragile.v1.x == x1}
+        y1 = int(self.get_input("Enter y1", valid_y1))
+        p1 = Point(x1, y1)
+
+        valid_x2 = {str(edge.v2.x) for edge in self.fragile if edge.v1 == p1}
+        x2 = int(self.get_input("Enter x2", valid_x2))
+
+        valid_y2 = {str(fragile.v2.y) for fragile in self.fragile if fragile.v2.x == x2}
+        y2 = int(self.get_input("Enter y2", valid_y2))
+
+        p2 = Point(x2, y2)
+
+        valid_bool = {"t", "f"}
+        bool_blocked = self.get_input("Enter t for exists edge f for not exist.", valid_bool)
+        bool_blocked = bool_blocked == "t"
+
         edge_node = self.find_edge_node(p1, p2)
         self.evidence[edge_node] = bool_blocked
 
-
-
+    def get_input(self, message: str, valid_inputs: {str}):
+        while True:
+            value = input(message + f" valid inputs {valid_inputs}")
+            if value in valid_inputs:
+                return value

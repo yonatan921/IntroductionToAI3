@@ -1,10 +1,8 @@
 from typing import Tuple
 
-from Aigent import StupidAigent, HumanAigent, InterferingAigent
 
 import argparse
 
-from Tile import Package
 from name_tuppels import Point, VPackage, Edge
 
 
@@ -12,7 +10,7 @@ class Parser:
 
     def __init__(self):
 
-        parser = argparse.ArgumentParser(description="Your program description here")
+        parser = argparse.ArgumentParser(description="Introduction to Artificial Intelligence - Programming Assignment 3")
         # Adding the 'filename' and 'algo' arguments
         parser.add_argument('--file', dest='filename', help="Input file path for the program")
 
