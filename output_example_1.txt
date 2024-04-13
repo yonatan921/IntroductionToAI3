@@ -14,7 +14,6 @@ input:
 
 output:
 
-C:\Users\97250\anaconda3\python.exe C:/Users/97250/PycharmProjects/IntroductionToAI3/main.py --file example.txt
 
 Enter your choice:
 0. Print network

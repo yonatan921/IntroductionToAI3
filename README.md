@@ -27,7 +27,7 @@ The solution method involves constructing a Bayes network according to the scena
 ### Deliverables
 - Source code 
 - Explanation of the method for constructing the Bayes network and reasoning algorithm: _Below_
-- Non-trivial example runs on at least 2 scenarios, including input and output: _output.txt_
+- Non-trivial example runs on at least 2 scenarios, including input and output: _output_example_1.txt_ ,_output_example_2.txt_
 
 
 ### How to Run
