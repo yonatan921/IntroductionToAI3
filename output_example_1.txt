@@ -1,0 +1,115 @@
+input:
+
+#X 1                ; Maximum x coordinate
+#Y 1                ; Maximum y coordinate
+
+#B 0 0 1 0          ; Edge from (0,0) to (1,0) is always blocked
+#F 1 0 1 1 0.8      ; Edge from (1,0) to (1,1) is fragile, with p = 1-qi = 0.8
+#V 1 0 F 0.2    ; Vertex (1,0) probability of package given low demand season 0.2
+#V 1 1 F 0.3    ; Vertex (1,1) probability package given low demand  0.3
+              ; Either assume package probability 0 by default,
+              ; or make sure to specify this probability for all vertices.
+#L 0.1        ; Global leakage probability 0.1
+#S 0.1 0.4 0.5 ; Prior distribution over season: 0.1 for low, 0.4 for medium, 0.5 for high
+
+output:
+
+C:\Users\97250\anaconda3\python.exe C:/Users/97250/PycharmProjects/IntroductionToAI3/main.py --file example.txt
+
+Enter your choice:
+0. Print network
+1. Reset evidence list to empty.
+2. Add piece of evidence to evidence list.
+3. Do probabilistic reasoning.
+4. Quit.
+0
+
+SEASON:
+    P(low) = 0.1
+    P(medium) = 0.4
+    P(high) = 0.5
+
+
+VERTEX (1, 0)
+    P(package|low) = 0.2
+    P(package|medium) = 0.4
+    P(package|high) = 0.6000000000000001
+
+
+VERTEX (1, 1)
+    P(package|low) = 0.3
+    P(package|medium) = 0.6
+    P(package|high) = 0.8999999999999999
+
+
+EDGE (1, 0) (1, 1)
+    P(blocked| no package (1, 0), no package (1, 1) = 0.1
+    P(blocked| no package (1, 0), package (1, 1) = 0.8
+    P(blocked| package (1, 0), no package (1, 1) = 0.8
+    P(blocked| package (1, 0), package (1, 1) = 0.96
+
+
+EDGE (0, 0) (1, 0)
+    P(blocked| no package (0, 0), no package (1, 0) = 1
+    P(blocked| no package (0, 0), package (1, 0) = 1
+    P(blocked| package (0, 0), no package (1, 0) = 1
+    P(blocked| package (0, 0), package (1, 0) = 1
+
+
+
+Enter your choice:
+0. Print network
+1. Reset evidence list to empty.
+2. Add piece of evidence to evidence list.
+3. Do probabilistic reasoning.
+4. Quit.
+3
+
+Choose probabilistic reasoning:
+1. What is the probability that each of the vertices contains packages?
+2. What is the probability that each of the edges is blocked?
+3. What is the distribution of the season variable?
+4. Quit.
+1
+The probability that each of the vertices contains packages is:
+Vertex: Point(x=1, y=0): 0.48000000000000015
+Vertex: Point(x=1, y=1): 0.7199999999999999
+
+Choose probabilistic reasoning:
+1. What is the probability that each of the vertices contains packages?
+2. What is the probability that each of the edges is blocked?
+3. What is the distribution of the season variable?
+4. Quit.
+2
+The probability that each of the edges is blocked is:
+Edge: (Point(x=1, y=0), Point(x=1, y=1)): 0.6704
+Edge: (Point(x=0, y=0), Point(x=1, y=0)): 1
+
+Choose probabilistic reasoning:
+1. What is the probability that each of the vertices contains packages?
+2. What is the probability that each of the edges is blocked?
+3. What is the distribution of the season variable?
+4. Quit.
+3
+The distribution of the season variable is:
+low season = 0.1, medium season = 0.4, high season = 0.5
+
+Choose probabilistic reasoning:
+1. What is the probability that each of the vertices contains packages?
+2. What is the probability that each of the edges is blocked?
+3. What is the distribution of the season variable?
+4. Quit.
+4
+
+Enter your choice:
+0. Print network
+1. Reset evidence list to empty.
+2. Add piece of evidence to evidence list.
+3. Do probabilistic reasoning.
+4. Quit.
+4
+
+Process finished with exit code 0
+
+
+we can see here that with no evidence all values are computed with all optional values of Season and Package nodes.

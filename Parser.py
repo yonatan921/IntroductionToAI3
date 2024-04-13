@@ -10,7 +10,7 @@ class Parser:
 
     def __init__(self):
 
-        parser = argparse.ArgumentParser(description="Introduction to Artificial Intelligence - Programming Assignment 3")
+        parser = argparse.ArgumentParser(description="Your program description here")
         # Adding the 'filename' and 'algo' arguments
         parser.add_argument('--file', dest='filename', help="Input file path for the program")
 

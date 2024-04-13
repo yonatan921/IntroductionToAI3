@@ -20,13 +20,14 @@ Enter your choice:
 """
     while True:
         choice = input(str_menu)
-        if choice == "0":
+        choice = int(choice)
+        if choice == 0:
             print(network)
-        if choice == "1":
+        if choice == 1:
             network.reset_evidence()
-        elif choice == "2":
+        elif choice == 2:
             network.add_evidence()
-        elif choice == "3":
+        elif choice == 3:
             prob_menu = """
 Choose probabilistic reasoning:
 1. What is the probability that each of the vertices contains packages?
@@ -36,26 +37,27 @@ Choose probabilistic reasoning:
 """
             while True:
                 prob_choice = input(prob_menu)
-                if prob_choice == "1":
+                prob_choice = int(prob_choice)
+                if prob_choice == 1:
                     print("The probability that each of the vertices contains packages is:")
                     for vertex in network.pacakge_nodes:
                         vector = network.\
                             enumerate_ask_package(vertex)
                         print(f"Vertex: {vertex._id}: {vector[0]}")
 
-                elif prob_choice == "2":
+                elif prob_choice == 2:
                     print("The probability that each of the edges is blocked is:")
                     for edge in network.edge_nodes:
                         vector = network.enumerate_ask_edge(edge)
                         print(f"Edge: {edge._id}: {vector[0]}")
 
-                elif prob_choice == "3":
+                elif prob_choice == 3:
                     print("The distribution of the season variable is:")
                     vector = network.enumerate_ask_season()
                     print(f"low season = {vector[0]}, medium season = {vector[1]}, high season = {vector[2]}")
-                elif prob_choice == "4":
+                elif prob_choice == 4:
                     break
-        elif choice == "4":
+        elif choice == 4:
             break
 
 
